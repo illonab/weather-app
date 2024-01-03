@@ -1,0 +1,73 @@
+@use "styles/partials/reset" as *;
+
+.app {
+    background-color: rgba(0, 208, 255, 0.996);
+
+    &__warm {
+        background-color: rgb(251, 92, 0);
+    }
+}
+
+.main {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+    padding: 2.5rem;
+}
+
+.search {
+    width: 100%;
+    margin: 0 0 7.5rem;
+
+    &__search-bar {
+        display: block;
+        width: 100%;
+        padding: 1.5rem;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 1.6rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+.location-box {
+    &__location {
+        color: #FFF;
+        font-size: 3.2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &__date {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 300;
+
+        text-align: center;
+    }
+}
+
+.weather-box {
+    text-align: center;
+
+    &__temp {
+        position: relative;
+        display: inline-block;
+        margin: 3rem auto;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+
+        padding: 1.5rem 2.5rem;
+
+        color: #FFF;
+        font-size: 10rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    &__weather {
+        color: #FFF;
+        font-size: 4.8rem;
+        font-weight: 700;
+    }
+}
